@@ -381,6 +381,7 @@ body {
     letter-spacing: initial;
     text-transform: initial;
     min-height: initial;
+    pointer-events: initial;
   }
 
   .intro {
