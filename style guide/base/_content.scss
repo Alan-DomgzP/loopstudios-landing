@@ -1,0 +1,57 @@
+@import "../lib/utils";
+
+.container {
+  padding: 3em 1.5em 0 1.5em;
+}
+
+.header {
+  // border: 1px solid blue;
+  height: 36rem;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url("./images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 4em;
+  margin-bottom: 10em;
+  // border: 2px dotted orange;
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    max-width: 100%;
+  }
+
+  .info {
+    // border: 1px solid green;
+    background-color: $White;
+    padding: 2em 1em 0.5em 1em;
+    font-family: $alata;
+    h1 {
+      font-family: $font-family;
+      text-transform: uppercase;
+      font-size: 2.37em;
+      text-align: center;
+      //
+      font-weight: 300;
+      // border: 1px solid dodgerblue;
+    }
+    p {
+      line-height: 25px;
+      color: $Dark-Gray;
+      text-align: center;
+      // border: 1px solid red;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import "../lib/utils";
+
+html,
+body {
+  margin: 0;
+  // overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family;
+  font-size: $font-size;
+  background-color: $White;
+}

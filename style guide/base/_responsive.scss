@@ -1,0 +1,298 @@
+@import "../lib/utils";
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 5em 11em 0 10.5em;
+  }
+
+  .header {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      url("./images/desktop/image-hero.jpg");
+    background-attachment: fixed;
+  }
+
+  .nav-hamburguer {
+    display: none;
+  }
+
+  .menu {
+    // display: flex;
+    // border: 1px solid white;
+    li {
+      // border: 1px solid orange;
+    }
+    li:not(:last-child) {
+      padding-bottom: 0;
+      padding-right: 2em;
+    }
+  }
+
+  .menu-mobile {
+    display: flex;
+    flex-direction: row;
+    background-color: initial;
+    margin: initial;
+    max-width: initial;
+    padding: initial;
+    position: initial;
+    width: initial;
+    height: initial;
+    font-size: initial;
+    letter-spacing: initial;
+    text-transform: initial;
+    min-height: initial;
+  }
+
+  .intro {
+    max-width: 58%;
+    margin-top: 8em;
+    h1 {
+      font-size: 71px;
+      padding: 35px;
+    }
+  }
+
+  .content-header {
+    flex-direction: row;
+    .info {
+      padding: 6em 0.2em 0.5em 5.2em;
+      margin-left: -165px;
+      h1 {
+        font-size: 3em;
+      }
+      h1,
+      p {
+        text-align: start;
+      }
+    }
+    .desktop {
+      display: block;
+    }
+    .mobile {
+      display: none;
+    }
+  }
+
+  .portfolio-header {
+    flex-direction: row;
+    justify-content: space-between;
+    h1 {
+      font-size: 3em;
+    }
+    button {
+      display: block;
+    }
+  }
+
+  .portfolio-container {
+    flex-direction: row;
+  }
+
+  .portfolio-card {
+    flex: 1 0 21%;
+    width: 17em;
+    height: 30em;
+    h1 {
+      max-width: 63%;
+      font-size: 2em;
+    }
+  }
+  .portfolio-card:not(:nth-child(4n)) {
+    margin-right: 1.5em;
+  }
+
+  .portfolio-card:nth-child(n + 5) {
+    margin-top: 1.5em;
+  }
+
+  .one {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.193) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      url("./images/desktop/image-deep-earth.jpg");
+
+    &:hover {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.6) 0%,
+          rgba(255, 255, 255, 0.6) 100%
+        ),
+        url("./images/desktop/image-deep-earth.jpg");
+      transition: all 0.5s ease;
+    }
+  }
+
+  .two {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      url("./images/desktop/image-night-arcade.jpg");
+
+    &:hover {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.6) 0%,
+          rgba(255, 255, 255, 0.6) 100%
+        ),
+        url("./images/desktop/image-night-arcade.jpg");
+      transition: all 0.5s ease;
+    }
+  }
+
+  .three {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      url("./images/desktop/image-soccer-team.jpg");
+
+    &:hover {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.6) 0%,
+          rgba(255, 255, 255, 0.6) 100%
+        ),
+        url("./images/desktop/image-soccer-team.jpg");
+      transition: all 0.5s ease;
+    }
+  }
+
+  .four {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      url("./images/desktop/image-grid.jpg");
+
+    &:hover {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.6) 0%,
+          rgba(255, 255, 255, 0.6) 100%
+        ),
+        url("./images/desktop/image-grid.jpg");
+      transition: all 0.5s ease;
+    }
+  }
+
+  .five {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      url("./images/desktop/image-from-above.jpg");
+
+    &:hover {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.6) 0%,
+          rgba(255, 255, 255, 0.6) 100%
+        ),
+        url("./images/desktop/image-from-above.jpg");
+      transition: all 0.5s ease;
+    }
+  }
+
+  .six {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      url("./images/desktop/image-pocket-borealis.jpg");
+
+    &:hover {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.6) 0%,
+          rgba(255, 255, 255, 0.6) 100%
+        ),
+        url("./images/desktop/image-pocket-borealis.jpg");
+      transition: all 0.5s ease;
+    }
+  }
+
+  .seven {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      url("./images/desktop/image-curiosity.jpg");
+
+    &:hover {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.6) 0%,
+          rgba(255, 255, 255, 0.6) 100%
+        ),
+        url("./images/desktop/image-curiosity.jpg");
+      transition: all 0.5s ease;
+    }
+  }
+
+  .eight {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      url("./images/desktop/image-fisheye.jpg");
+
+    &:hover {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.6) 0%,
+          rgba(255, 255, 255, 0.6) 100%
+        ),
+        url("./images/desktop/image-fisheye.jpg");
+      transition: all 0.5s ease;
+    }
+  }
+
+  .bottom {
+    display: none;
+  }
+
+  .footer {
+    height: 8em;
+    align-items: initial;
+    flex-direction: initial;
+  }
+
+  .footer-col {
+    align-items: initial;
+  }
+
+  .footer-menu {
+    margin-top: 1.5em;
+    ul {
+      li:not(:last-child) {
+        padding-right: 3em;
+      }
+    }
+  }
+
+  .menu-footer {
+    flex-direction: initial;
+    align-items: center;
+    li:not(:last-child) {
+      margin-bottom: initial;
+    }
+  }
+
+  .copyright {
+    margin-bottom: initial;
+  }
+}

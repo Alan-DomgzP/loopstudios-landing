@@ -1,0 +1,76 @@
+@import "../lib/utils";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // border: 1px solid cyan;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  // border: 1px solid white;
+  padding-inline-start: 0px;
+  li {
+    list-style: none;
+    // border: 1px solid white;
+    a {
+      color: $White;
+      text-decoration: none;
+      &:hover {
+        &:after {
+          content: "";
+          position: absolute;
+          width: 24px;
+          height: 2px;
+          margin-top: 30px;
+          margin-left: -23px;
+          transform: translate(-50%, -50%);
+          background-color: white;
+        }
+      }
+    }
+  }
+  li:not(:last-child) {
+    padding-bottom: 1em;
+  }
+}
+
+.menu-mobile {
+  // border: 1px solid white;
+  display: none;
+  margin: 0 auto;
+  max-width: 100%;
+  padding-left: 2rem;
+  padding-top: 10rem;
+  pointer-events: none;
+  position: fixed;
+  flex-direction: column;
+  background-color: $Black;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 3px;
+  font-size: 1.75rem;
+  transition: 0.3s;
+}
+
+.active {
+  z-index: 4;
+  // border: 1px solid red;
+}
+
+.close-menu {
+  width: 125%;
+  display: none;
+}
+
+.isOpen {
+  display: block;
+}

@@ -1,0 +1,70 @@
+@import "../lib/utils";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4em;
+  background-color: $Black;
+  // border: 2px dotted orange;
+}
+
+.footer-col {
+  // border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-menu {
+  margin: 2.5em 0;
+}
+
+.menu-footer {
+  flex-direction: column;
+  text-align: center;
+  li:not(:last-child) {
+    margin-bottom: 0.8rem;
+  }
+  // border: 1px solid red;
+}
+
+.socials {
+  .social-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    // border: 1px solid red;
+    padding-inline-start: 0px;
+    li {
+      list-style: none;
+      a {
+        color: $White;
+        text-decoration: none;
+        &:hover {
+          &:after {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            margin-top: 34px;
+            margin-left: -12px;
+            transform: translate(-50%, -50%);
+            background-color: white;
+          }
+        }
+      }
+    }
+    li:not(:last-child) {
+      padding-right: 1.2rem;
+    }
+  }
+}
+
+.copyright {
+  color: $Dark-Gray;
+  font-family: $alata;
+  margin-bottom: 3.5em;
+}
