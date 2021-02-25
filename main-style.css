@@ -68,6 +68,7 @@ body {
   display: flex;
   margin: 0;
   padding-inline-start: 0px;
+  font-family: "Alata", sans-serif;
 }
 .menu li {
   list-style: none;
@@ -377,7 +378,7 @@ body {
     position: initial;
     width: initial;
     height: initial;
-    font-size: initial;
+    font-size: 15px;
     letter-spacing: initial;
     text-transform: initial;
     min-height: initial;
