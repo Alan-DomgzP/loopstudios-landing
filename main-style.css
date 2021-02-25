@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 4.5em;
+  margin-top: 5em;
   margin-bottom: 10em;
 }
 .content-header .desktop {
