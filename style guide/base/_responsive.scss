@@ -20,11 +20,6 @@
   }
 
   .menu {
-    // display: flex;
-    // border: 1px solid white;
-    li {
-      // border: 1px solid orange;
-    }
     li:not(:last-child) {
       padding-bottom: 0;
       padding-right: 2em;
@@ -41,7 +36,7 @@
     position: initial;
     width: initial;
     height: initial;
-    font-size: initial;
+    font-size: 15px;
     letter-spacing: initial;
     text-transform: initial;
     min-height: initial;
